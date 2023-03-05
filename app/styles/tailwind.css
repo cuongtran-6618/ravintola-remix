@@ -5,6 +5,7 @@
 :root {
   --tumma-roosa: #E6B9AF;
   --tumma-puu: #463c3e;
+  --vaalea-roosa: #FAF8F6;
 }
 
 .color-tumma-roosa {
@@ -13,4 +14,28 @@
 
 .bg-tumma-puu {
   background-color: var(--tumma-puu);
+}
+
+.bg-vaalea-roosa {
+  background-color: var(--vaalea-roosa);
+}
+
+.mobile-block {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-item .active {
+  text-decoration: underline;
+  text-decoration-color: var(--tumma-roosa);
+  text-underline-offset: 8px;
+  color: var(--tumma-roosa);
+}
+
+#hero-container {
+  background-image: url('../../public/images/bg.png');
+  background-size: cover;
+  width: auto;
 }

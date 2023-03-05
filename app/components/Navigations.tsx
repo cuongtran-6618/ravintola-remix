@@ -16,11 +16,13 @@ export default function Navigations() {
   };
 
   return (
-    <div className="container text-xl py-8 px-4 flex justify-between items-center bg-tumma-puu align-center">
-      <div className="logo-container order-first text-white ">Ravintola</div>
-      <div className="order-last">
+    <div className="text-xl py-8 px-4 flex justify-between items-center bg-tumma-puu align-center">
+      <div className="logo-container order-first text-white ">
+        <NavLink to="/">Ravintola</NavLink>
+      </div>
+      <div className="order-last lg:order-1">
         <nav id="main-navigation">
-          <button className="md:hidden" onClick={toggleMobileNav}>
+          <button className="lg:hidden" onClick={toggleMobileNav}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -40,13 +42,13 @@ export default function Navigations() {
             id="navigation-container-wrapper"
             className={
               isNavOpen
-                ? "fixed top-0 bottom-0 right-0 left-0 bg-white z-2 p-8"
-                : "hidden"
+                ? "fixed top-0 bottom-0 right-0 left-0 bg-white z-2 p-8 "
+                : "hidden lg:relative lg:bg-none lg:block"
             }
           >
             <div className="relative">
               <button
-                className="absolute top-0 right-0 z-2"
+                className="absolute top-0 right-0 z-2 lg:hidden"
                 onClick={closeMobileNav}
               >
                 <svg
@@ -64,8 +66,8 @@ export default function Navigations() {
                   />
                 </svg>
               </button>
-              <div id="navigation-container" className="pt-16">
-                <ul className="flex flex-col justify-center align-baseline md:flex-row gap-4 ">
+              <div id="navigation-container" className="pt-16 lg:p-0">
+                <ul className="flex flex-col justify-center align-baseline lg:flex-row gap-6 lg:text-white">
                   <li className={navigationItemClass}>
                     <NavLink to="/">Home</NavLink>
                   </li>
@@ -90,7 +92,7 @@ export default function Navigations() {
           </div>
         </nav>
       </div>
-      <div className="language-swticher-container order-1 text-white ">
+      <div className="language-swticher-container order-1 text-white lg:order-last">
         <ul>
           <li>ENG</li>
         </ul>
