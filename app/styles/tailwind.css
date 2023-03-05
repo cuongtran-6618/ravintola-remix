@@ -4,8 +4,13 @@
 
 :root {
   --tumma-roosa: #E6B9AF;
+  --tumma-puu: #463c3e;
 }
 
 .color-tumma-roosa {
   color: var(--tumma-roosa);
+}
+
+.bg-tumma-puu {
+  background-color: var(--tumma-puu);
 }
