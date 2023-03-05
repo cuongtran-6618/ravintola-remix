@@ -9,6 +9,8 @@ import {
 } from "@remix-run/react";
 
 import stylesheet from "~/styles/tailwind.css";
+import Navigations from "./components/Navigations";
+
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export const meta: MetaFunction = () => ({
@@ -25,6 +27,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Navigations />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

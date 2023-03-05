@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --tumma-roosa: #E6B9AF;
+}
+
+.color-tumma-roosa {
+  color: var(--tumma-roosa);
+}
