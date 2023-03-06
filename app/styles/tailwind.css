@@ -6,6 +6,8 @@
   --tumma-roosa: #E6B9AF;
   --tumma-puu: #463c3e;
   --vaalea-roosa: #FAF8F6;
+  --hiekka: #B96E5F;
+  --roosa: #F2EDE9;
 }
 
 .color-tumma-roosa {
@@ -18,6 +20,26 @@
 
 .bg-vaalea-roosa {
   background-color: var(--vaalea-roosa);
+}
+
+.color-hiekka {
+  color: var(--hiekka);
+}
+
+.border-color-hiekka {
+  border-color: var(--hiekka);
+}
+
+.color-roosa {
+  color: var(--roosa);
+}
+
+.bg-color-rossa {
+  background-color: var(--roosa);
+}
+
+section.container {
+  line-height: 2rem;
 }
 
 .mobile-block {

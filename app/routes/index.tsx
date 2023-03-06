@@ -1,4 +1,5 @@
 import CheckoutMenu from "~/components/CheckoutMenu";
+import Footer from "~/components/Footer";
 import HeroSection from "~/components/HeroSection";
 import OurRegion from "~/components/OurRegion";
 import SpaceBlock from "~/components/SpaceBlock";
@@ -9,6 +10,7 @@ export default function Index() {
       <OurRegion />
       <SpaceBlock />
       <CheckoutMenu />
+      <Footer />
     </div>
   );
 }

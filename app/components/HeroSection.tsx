@@ -1,3 +1,4 @@
+import BookATable from "./BookATable";
 export default function HeroSection() {
   return (
     <section id="hero-container-wrapper" className="">
@@ -9,9 +10,7 @@ export default function HeroSection() {
           <span className="text-xl mobile-block text-center">
             The wonderful flavors of Vietnam are only a table reservation away.
           </span>
-          <button className="py-4 px-8 color-tumma-roosa bg-white max-w-[200px] my-8">
-            Book a table
-          </button>
+          <BookATable />
         </div>
       </div>
     </section>

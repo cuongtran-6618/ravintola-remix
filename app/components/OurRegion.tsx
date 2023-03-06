@@ -2,7 +2,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function OurRegion() {
   return (
-    <section className="">
+    <section className="container mx-auto lg:max-w-4xl">
       <SectionHeader title="Our Region" />
       <div className="mobile-block">
         The green hills of Northern Vietnam, the tropical beaches of the south
