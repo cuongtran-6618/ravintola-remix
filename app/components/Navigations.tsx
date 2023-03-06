@@ -68,22 +68,22 @@ export default function Navigations() {
               </button>
               <div id="navigation-container" className="pt-16 lg:p-0">
                 <ul className="flex flex-col justify-center align-baseline lg:flex-row gap-6 lg:text-white">
-                  <li className={navigationItemClass}>
+                  <li className={navigationItemClass} onClick={closeMobileNav}>
                     <NavLink to="/">Home</NavLink>
                   </li>
-                  <li className={navigationItemClass}>
+                  <li className={navigationItemClass} onClick={closeMobileNav}>
                     <NavLink to="/menu">Menu</NavLink>
                   </li>
-                  <li className={navigationItemClass}>
+                  <li className={navigationItemClass} onClick={closeMobileNav}>
                     <NavLink to="/our-story">Our story</NavLink>
                   </li>
-                  <li className={navigationItemClass}>
+                  <li className={navigationItemClass} onClick={closeMobileNav}>
                     <NavLink to="/groups-and-events">Groups and events</NavLink>
                   </li>
-                  <li className={navigationItemClass}>
+                  <li className={navigationItemClass} onClick={closeMobileNav}>
                     <NavLink to="/gallery">Gallery</NavLink>
                   </li>
-                  <li className={navigationItemClass}>
+                  <li className={navigationItemClass} onClick={closeMobileNav}>
                     <NavLink to="/contact">Contact</NavLink>
                   </li>
                 </ul>
