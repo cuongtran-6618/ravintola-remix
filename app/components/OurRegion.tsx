@@ -2,9 +2,9 @@ import SectionHeader from "./SectionHeader";
 
 export default function OurRegion() {
   return (
-    <section className="container mx-auto lg:max-w-4xl">
+    <section className="container mx-auto text-xl lg:text-2xl lg:max-w-4xl">
       <SectionHeader title="Our Region" />
-      <div className="mobile-block">
+      <div className="mobile-block leading-10">
         The green hills of Northern Vietnam, the tropical beaches of the south
         and the buzzing streets of cities filled with various endearing scents.
         In addition to Vietnam being a tropical paradise, it is also a paradise

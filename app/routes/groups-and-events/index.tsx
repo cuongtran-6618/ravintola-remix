@@ -1,7 +1,7 @@
 import SectionHeader from "~/components/SectionHeader";
 export default function GroupsAndEventsRouter() {
   return (
-    <main>
+    <main className="container text-center mx-auto">
       <SectionHeader title="Groups and events" />
       <div className="container px-4 my-4">
         <div className="content-container text-center">

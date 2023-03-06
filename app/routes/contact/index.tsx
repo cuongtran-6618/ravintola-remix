@@ -1,9 +1,9 @@
 import SectionHeader from "~/components/SectionHeader";
 export default function ContactRouter() {
   return (
-    <section className="container">
+    <section className="container text-center mx-auto">
       <SectionHeader title="Contact" />
-      <div className="container text-center">
+      <div className="">
         <div className="content-container">Enjoy your meal!</div>
       </div>
     </section>
