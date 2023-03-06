@@ -10,6 +10,8 @@ import {
 
 import stylesheet from "~/styles/tailwind.css";
 import Navigations from "./components/Navigations";
+import Footer from "./components/Footer";
+import SpaceBlock from "./components/SpaceBlock";
 
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
@@ -32,6 +34,8 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <SpaceBlock />
+        <Footer />
       </body>
     </html>
   );
