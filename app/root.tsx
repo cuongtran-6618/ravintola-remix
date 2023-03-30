@@ -13,6 +13,27 @@ import Navigations from "./components/Navigations";
 import Footer from "./components/Footer";
 import SpaceBlock from "./components/SpaceBlock";
 
+import { storyblokInit, apiPlugin } from "@storyblok/react";
+import Feature from "./components/Feature";
+import Grid from "./components/Grid";
+import Page from "./components/Page";
+import Teaser from "./components/Teaser";
+import Menu from "./components/Menu";
+
+const components = {
+  feature: Feature,
+  grid: Grid,
+  teaser: Teaser,
+  page: Page,
+  menu: Menu,
+};
+
+storyblokInit({
+  accessToken: process.env.STORYBLOK_PREVIEW_TOKEN,
+  use: [apiPlugin],
+  components,
+});
+
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export const meta: MetaFunction = () => ({
