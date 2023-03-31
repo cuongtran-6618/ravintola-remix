@@ -19,7 +19,7 @@ export const loader = async ({ params }) => {
   return json(data?.story);
 };
 
-export default function Menu() {
+export default function Page() {
   let story = useLoaderData();
 
   story = useStoryblokState(story);

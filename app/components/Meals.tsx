@@ -14,10 +14,10 @@ interface Blok {
 const Meals = ({ blok }: Blok) => {
   return (
     <main {...storyblokEditable(blok)} key={blok._uid}>
-      {blok.body.map((nestedBlok) => (
+      {blok.ingradients.map((nestedBlok) => (
         <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
       ))}
     </main>
   );
 };
-export default Menu;
+export default Meals;

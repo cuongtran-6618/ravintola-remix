@@ -19,6 +19,8 @@ import Grid from "./components/Grid";
 import Page from "./components/Page";
 import Teaser from "./components/Teaser";
 import Menu from "./components/Menu";
+import Meals from "./components/Meals";
+import Meal from "./components/Meal";
 
 const components = {
   feature: Feature,
@@ -26,10 +28,12 @@ const components = {
   teaser: Teaser,
   page: Page,
   menu: Menu,
+  meals: Meals,
+  meal: Meal,
 };
 
 storyblokInit({
-  accessToken: process.env.STORYBLOK_PREVIEW_TOKEN,
+  accessToken: "bqCnNc085m98VGlPuYaaFgtt",
   use: [apiPlugin],
   components,
 });
