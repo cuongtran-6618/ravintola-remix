@@ -21,9 +21,6 @@ export const loader = async ({ params }) => {
 
 export default function Page() {
   let story = useLoaderData();
-
   story = useStoryblokState(story);
-  console.log("from page slug", story.content);
-  console.log("-------------------------");
   return <StoryblokComponent blok={story.content} />;
 }

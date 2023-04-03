@@ -21,6 +21,7 @@ import Teaser from "./components/Teaser";
 import Menu from "./components/Menu";
 import Meals from "./components/Meals";
 import Meal from "./components/Meal";
+import Hero from "./components/Hero";
 
 const components = {
   feature: Feature,
@@ -30,6 +31,7 @@ const components = {
   menu: Menu,
   meals: Meals,
   meal: Meal,
+  hero: Hero,
 };
 
 storyblokInit({

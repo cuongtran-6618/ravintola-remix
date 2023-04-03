@@ -9,5 +9,5 @@ node_modules
 /public/build
 /api/index.js
 /api/index.js.map
-localhost-key.pem
+localhost.pem
 localhost-key.pem
