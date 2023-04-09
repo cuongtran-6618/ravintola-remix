@@ -22,6 +22,10 @@ import Menu from "./components/Menu";
 import Meals from "./components/Meals";
 import Meal from "./components/Meal";
 import Hero from "./components/Hero";
+import Story from "./components/Story";
+import LinkContainer from "./components/LinkContainer";
+import TwoColumnsContainer from "./components/TwoColumnsContainer";
+import ImageContainer from "./components/ImageContainer";
 
 const components = {
   feature: Feature,
@@ -32,6 +36,10 @@ const components = {
   meals: Meals,
   meal: Meal,
   hero: Hero,
+  story: Story,
+  link_container: LinkContainer,
+  two_columns_container: TwoColumnsContainer,
+  image_container: ImageContainer,
 };
 
 storyblokInit({

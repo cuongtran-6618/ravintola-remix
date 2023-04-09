@@ -1,13 +1,6 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
-import LinkAsButton from "./LinkAsButton";
-
-interface IButton {
-  id: string;
-  url: string;
-  linktype: string;
-  fieldtype: string;
-  cached_url: string;
-}
+import LinkContainer from "./LinkContainer";
+import { TypeLinkContainer } from "~/types";
 
 interface IBackgroundImage {
   id: string;
@@ -23,12 +16,13 @@ interface Blok {
     _uid: string;
     title: string;
     content: string;
-    book_button: IButton;
+    links_container: Array<TypeLinkContainer>;
     background_image: IBackgroundImage;
   };
 }
 
 const Hero = ({ blok }: Blok) => {
+  //console.log(blok);
   return (
     <>
       <section
@@ -45,7 +39,11 @@ const Hero = ({ blok }: Blok) => {
             <span className="text-xl lg:text-2xl mobile-block text-center">
               {blok.title}
             </span>
-            <LinkAsButton blok={blok.book_button} />
+            {blok.links_container.map((blok) => (
+              <div key={blok._uid}>
+                <StoryblokComponent blok={blok} />
+              </div>
+            ))}
           </div>
         </div>
       </section>
