@@ -35,12 +35,15 @@ const Hero = ({ blok }: Blok) => {
           id="hero-container"
           className="min-h-[80vh] flex flex-col justify-center items-center"
         >
-          <div className="hero-container-content text-white mx-auto flex flex-col justify-center items-center">
-            <span className="text-xl lg:text-2xl mobile-block text-center">
-              {blok.title}
-            </span>
+          <div className="hero-container-content text-white mx-auto flex flex-col justify-center items-center gap-8">
+            <div className="text-xl lg:text-2xl mobile-block text-center">
+              <span>{blok.title}</span>
+            </div>
             {blok.links_container.map((blok) => (
-              <div key={blok._uid}>
+              <div
+                key={blok._uid}
+                className=""
+              >
                 <StoryblokComponent blok={blok} />
               </div>
             ))}

@@ -16,10 +16,10 @@ const Story = ({ blok }: Blok) => {
     <section
       {...storyblokEditable(blok)}
       key={blok._uid}
-      className="container mx-auto text-xl lg:text-2xl lg:max-w-4xl"
+      className="container mx-auto text-xl mb-36 lg:text-xl lg:max-w-4xl"
     >
       <SectionHeader title={blok.title} />
-      <div className="mobile-block leading-10">{blok.content}</div>
+      <div className="mobile-block leading-8 text-center">{blok.content}</div>
       {blok.links_container.map((blok) => (
         <div key={blok._uid}>
           <StoryblokComponent blok={blok} />

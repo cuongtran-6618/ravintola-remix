@@ -2,7 +2,7 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import { TypeLinkAsButton, styleButton } from "~/types";
 
 const LinkContainer = ({ blok }: TypeLinkAsButton) => {
-  let style = "py-4 px-8 color-tumma-roosa bg-white max-w-[200px] my-8";
+  let style = "py-4 px-8 color-hiekka bg-white max-w-[200px] my-8";
   if (
     blok !== undefined &&
     blok.hasOwnProperty("style") &&
@@ -13,7 +13,7 @@ const LinkContainer = ({ blok }: TypeLinkAsButton) => {
   }
 
   return (
-    <div className="mx-auto text-center">
+    <div className="mx-auto text-center flex flex-col justify-center items-center gap-16">
       <a
         {...storyblokEditable(blok)}
         key={blok.link.key}

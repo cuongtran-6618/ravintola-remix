@@ -4,10 +4,11 @@
 
 :root {
   --tumma-roosa: #E6B9AF;
-  --tumma-puu: #463c3e;
+  --tumma-puu: #3E3536;
   --vaalea-roosa: #FAF8F6;
-  --hiekka: #B96E5F;
+  --hiekka: #B96E55;
   --roosa: #F2EDE9;
+  --black-truffle: #463C3E;
 }
 
 .color-tumma-roosa {
@@ -36,6 +37,10 @@
 
 .bg-color-rossa {
   background-color: var(--roosa);
+}
+
+.color-black-truffle {
+  color: var(--black-truffle);
 }
 
 section.container {
