@@ -1,3 +1,4 @@
+/*
 import CheckoutMenu from "~/components/CheckoutMenu";
 import HeroSection from "~/components/HeroSection";
 import OurRegion from "~/components/OurRegion";
@@ -12,3 +13,5 @@ export default function Index() {
     </div>
   );
 }
+*/
+export { default, loader } from "./$slug";

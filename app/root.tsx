@@ -13,6 +13,41 @@ import Navigations from "./components/Navigations";
 import Footer from "./components/Footer";
 import SpaceBlock from "./components/SpaceBlock";
 
+import { storyblokInit, apiPlugin } from "@storyblok/react";
+import Feature from "./components/Feature";
+import Grid from "./components/Grid";
+import Page from "./components/Page";
+import Teaser from "./components/Teaser";
+import Menu from "./components/Menu";
+import Meals from "./components/Meals";
+import Meal from "./components/Meal";
+import Hero from "./components/Hero";
+import Story from "./components/Story";
+import LinkContainer from "./components/LinkContainer";
+import TwoColumnsContainer from "./components/TwoColumnsContainer";
+import ImageContainer from "./components/ImageContainer";
+
+const components = {
+  feature: Feature,
+  grid: Grid,
+  teaser: Teaser,
+  page: Page,
+  menu: Menu,
+  meals: Meals,
+  meal: Meal,
+  hero: Hero,
+  story: Story,
+  link_container: LinkContainer,
+  two_columns_container: TwoColumnsContainer,
+  image_container: ImageContainer,
+};
+
+storyblokInit({
+  accessToken: "bqCnNc085m98VGlPuYaaFgtt",
+  use: [apiPlugin],
+  components,
+});
+
 export const links = () => [{ rel: "stylesheet", href: stylesheet }];
 
 export const meta: MetaFunction = () => ({
