@@ -26,6 +26,7 @@ import Story from "./components/Story";
 import LinkContainer from "./components/LinkContainer";
 import TwoColumnsContainer from "./components/TwoColumnsContainer";
 import ImageContainer from "./components/ImageContainer";
+import OurStory from "./components/OurStory";
 
 const components = {
   feature: Feature,
@@ -40,6 +41,7 @@ const components = {
   link_container: LinkContainer,
   two_columns_container: TwoColumnsContainer,
   image_container: ImageContainer,
+  outStory: OurStory,
 };
 
 storyblokInit({

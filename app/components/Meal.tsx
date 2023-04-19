@@ -12,9 +12,9 @@ interface Blok {
   };
 }
 
-const Meal = ({ blok }: Blok) => {
+const Meal = ({ blok }: Blok, key: string) => {
   return (
-    <main {...storyblokEditable(blok)} key={blok._uid}>
+    <div {...storyblokEditable(blok)} key={key}>
       <div className="container text-center mx-auto mb-8">
         <div className="my-4 mx-auto flex flex-row justify-center gap-1">
           <strong>{blok.ingredient}</strong>
@@ -24,6 +24,7 @@ const Meal = ({ blok }: Blok) => {
               alt={nestedBlok.alt}
               title={nestedBlok.title}
               width="16px"
+              key={nestedBlok.id}
             />
           ))}
         </div>
@@ -34,7 +35,7 @@ const Meal = ({ blok }: Blok) => {
           </strong>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 
