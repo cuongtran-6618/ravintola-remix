@@ -26,12 +26,9 @@ import Story from "./components/Story";
 import LinkContainer from "./components/LinkContainer";
 import TwoColumnsContainer from "./components/TwoColumnsContainer";
 import ImageContainer from "./components/ImageContainer";
-import OurStory from "./components/OurStory";
+import DefaultPage from "./components/DefaultPage";
 
 const components = {
-  feature: Feature,
-  grid: Grid,
-  teaser: Teaser,
   page: Page,
   menu: Menu,
   meals: Meals,
@@ -41,7 +38,7 @@ const components = {
   link_container: LinkContainer,
   two_columns_container: TwoColumnsContainer,
   image_container: ImageContainer,
-  outStory: OurStory,
+  default_page: DefaultPage,
 };
 
 storyblokInit({

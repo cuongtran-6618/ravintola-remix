@@ -15,7 +15,6 @@ export const loader = async ({ params }) => {
   };
 
   let { data } = await getStoryblokApi().get(`cdn/stories/${slug}`, sbParams);
-
   return json(data?.story);
 };
 
