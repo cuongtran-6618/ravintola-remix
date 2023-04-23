@@ -66,3 +66,7 @@ section.container {
   background-size: cover;
   width: auto;
 }
+
+article p {
+  margin: 1rem auto;
+}
