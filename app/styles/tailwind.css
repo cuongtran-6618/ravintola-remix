@@ -70,3 +70,9 @@ section.container {
 article p {
   margin: 1rem auto;
 }
+
+.list-container li img {
+  width: 320px;
+  height: auto;
+  max-height: 320px;
+}

@@ -14,10 +14,7 @@ import Footer from "./components/Footer";
 import SpaceBlock from "./components/SpaceBlock";
 
 import { storyblokInit, apiPlugin } from "@storyblok/react";
-import Feature from "./components/Feature";
-import Grid from "./components/Grid";
 import Page from "./components/Page";
-import Teaser from "./components/Teaser";
 import Menu from "./components/Menu";
 import Meals from "./components/Meals";
 import Meal from "./components/Meal";
@@ -27,7 +24,12 @@ import LinkContainer from "./components/LinkContainer";
 import TwoColumnsContainer from "./components/TwoColumnsContainer";
 import ImageContainer from "./components/ImageContainer";
 import DefaultPage from "./components/DefaultPage";
+import List from "./components/List";
+import PageTitle from "./components/PageTitle";
 
+/**
+ * key have to be the technical name of the block in storyblok
+ */
 const components = {
   page: Page,
   menu: Menu,
@@ -39,6 +41,8 @@ const components = {
   two_columns_container: TwoColumnsContainer,
   image_container: ImageContainer,
   default_page: DefaultPage,
+  list: List,
+  page_title: PageTitle,
 };
 
 storyblokInit({
