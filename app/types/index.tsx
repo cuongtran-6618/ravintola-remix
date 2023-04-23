@@ -42,3 +42,11 @@ export type TypeMeals = {
   ingradients: Array<TypeMeal>;
   description: string;
 };
+
+export type TypeStory = {
+  _uid: string;
+  title: string;
+  content: string;
+  links_container: Array<TypeLinkContainer>;
+  styleClass: string;
+};

@@ -8,6 +8,7 @@
     "proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
   },
   "dependencies": {
+    "@markdoc/markdoc": "^0.2.2",
     "@remix-run/node": "^1.14.0",
     "@remix-run/react": "^1.14.0",
     "@remix-run/vercel": "^1.14.0",

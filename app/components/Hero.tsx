@@ -1,6 +1,5 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
-import LinkContainer from "./LinkContainer";
-import { TypeLinkContainer } from "~/types";
+import type { TypeLinkContainer } from "~/types";
 
 interface IBackgroundImage {
   id: string;
