@@ -1,7 +1,6 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
 const TwoColumnsContainer = ({ blok }) => {
-  console.log(blok);
   return (
     <div
       {...storyblokEditable(blok)}

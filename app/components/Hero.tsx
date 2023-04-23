@@ -22,7 +22,6 @@ interface Blok {
 }
 
 const Hero = ({ blok }: Blok) => {
-  //console.log(blok);
   return (
     <>
       <section

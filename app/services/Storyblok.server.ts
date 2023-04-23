@@ -27,7 +27,7 @@ const getStory = async (slug: string, isDraft: boolean = true) => {
   let sbParams: ISbStoriesParams = {
     version: isDraft ? "draft" : "published",
   };
-  console.log(slug);
+  //console.log(slug);
 
   let { data } = await storyblokInstance.get(`cdn/stories/${slug}`, sbParams);
 

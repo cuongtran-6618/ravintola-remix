@@ -1,6 +1,7 @@
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import SectionHeader from "./SectionHeader";
-import { TypeLinkContainer } from "~/types";
+import type { TypeLinkContainer } from "~/types";
+import MDEditor from "@uiw/react-md-editor";
 
 interface Blok {
   blok: {
@@ -19,7 +20,9 @@ const Story = ({ blok }: Blok) => {
       className="container mx-auto text-xl mb-36 lg:text-xl lg:max-w-4xl"
     >
       <SectionHeader title={blok.title} />
-      <div className="mobile-block leading-8 text-center">{blok.content}</div>
+      <div className="mobile-block leading-8 text-center">
+        <MDEditor value={blok.content} />
+      </div>
       {blok.links_container.map((blok) => (
         <div key={blok._uid}>
           <StoryblokComponent blok={blok} />
