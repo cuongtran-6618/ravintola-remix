@@ -31,7 +31,7 @@ export default function ContactRouter() {
   return (
     <section className="container text-center mx-auto">
       <SectionHeader title="Contact" />
-      <div className="">
+      <div className="max-w-screen-sm mx-auto text-left">
         <ContactForm />
       </div>
     </section>

@@ -71,7 +71,7 @@ export default function ContactForm() {
       </div>
       <div className="button primary flex flex-col justify-start">
         <button
-          className="mx-auto py-8 px-16 btn-primary-color uppercase font-bold hover:text-white hover:bg-[#ff7700]"
+          className="mx-auto btn-primary-color uppercase font-bold hover:bg-white bg-none border-solid border-2 border-black my-8 py-4 px-8 lg:max-w-[400px]"
           type="submit"
         >
           Submit
