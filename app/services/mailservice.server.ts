@@ -51,7 +51,7 @@ export async function sendMail(values: FormValues): Promise<Result> {
     return { message: "Email sent successfully" };
   } catch (error) {
     return {
-      message: "Something went wrong, please try again",
+      message: "Something went wrong, please try again. This is an error",
       error: error.message,
     };
   }
