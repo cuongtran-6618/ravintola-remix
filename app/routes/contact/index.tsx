@@ -23,8 +23,9 @@ export const action: ActionFunction = async ({ request }) => {
   };
 
   let result = await sendMail(data);
-
-  return json({ result }, { status: result.error ? 500 : 200 });
+  const response = json({ result }, { status: result.error ? 500 : 200 });
+  console.log(response);
+  return response;
 };
 
 export default function ContactRouter() {
